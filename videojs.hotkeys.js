@@ -140,6 +140,7 @@
             // Toggle Mute with the M key
             case 77:
               if (enableMute) {
+                event.preventDefault();
                 if (player.muted()) {
                   player.muted(false);
                 } else {
@@ -151,6 +152,7 @@
             // Toggle Fullscreen with the F key
             case  70:
               if (enableFull) {
+                event.preventDefault();
                 if (player.isFullscreen()) {
                   player.exitFullscreen();
                 } else {
